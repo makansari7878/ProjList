@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         //var myadapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,teams)
         var myadapter = ArrayAdapter(this, R.layout.item_layout, R.id.textViewItem,teams)
         mylistview.adapter = myadapter
-
+// test
         mylistview.setOnItemClickListener { adapterView, view, pos, id ->
           var item =   adapterView.getItemAtPosition(pos).toString()
             Toast.makeText(this, "you clicked $item", Toast.LENGTH_SHORT).show()
