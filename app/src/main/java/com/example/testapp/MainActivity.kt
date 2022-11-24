@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         mylistview.adapter = myadapter
 
         mylistview.setOnItemClickListener { adapterView, view, pos, id ->
-//test
           var item =   adapterView.getItemAtPosition(pos).toString()
             Toast.makeText(this, "you clicked $item", Toast.LENGTH_SHORT).show()
 
